@@ -38,7 +38,7 @@ Elevate *modified* files to the status of *staged*.
 $ git add FILE1 FILE2 ...
 ```
 
-### Have you staged something you wouldn't have to?
+### Have you staged something you wouldn't have?
 
 For example, say you have run:
 ```
