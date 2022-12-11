@@ -1,4 +1,4 @@
-# Git Cheatsheet
+# Learning *git*
 
 
 ## Preamble
