@@ -38,8 +38,7 @@ Elevate *modified* files to the status of *staged*.
 $ git add FILE1 FILE2 ...
 ```
 
-
-### Have you staged something you shouldn't have?
+### Have you staged something you wouldn't have?
 
 For example, say you have run:
 ```
@@ -62,7 +61,7 @@ $ git restore --staged <file>
 
 ## Committing your changes
 
-Take *staged* files to be *tracked* in ```.git```.
+Take *staged* files (see the preceedeing section) to be *tracked* in ```.git```.
 ```
 $ git commit -m 'commit message'
 ```
@@ -82,16 +81,4 @@ $ git rm FILE
 **(To change)** However, this command deletes ```FILE``` from your disk too. If you want a staged file to be removed from the status of stages and keep it in your working tree, then
 ```
 $ git rm --cached FILE
-```
-
-
-### Undo a ```git push```
-
-Assume you have just run
-```
-$ git push
-```
-but afterwards you notice there is a small problem with the commit you have pushed. You can undo via
-```
-$ git revert SHA
 ```
