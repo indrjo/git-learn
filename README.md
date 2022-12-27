@@ -107,4 +107,4 @@ e56a8c7 deleted LICENSE.txt
 4fb4172 Corrected title of README.md
 [...]
 ```
-then, copy ```8cfd3ec```.
+then copy ```8cfd3ec```.
