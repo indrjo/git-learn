@@ -38,8 +38,7 @@ Elevate *modified* files to the status of *staged*.
 $ git add FILE1 FILE2 ...
 ```
 
-
-### Have you staged something you shouldn't have?
+### Have you staged something you wouldn't have?
 
 For example, say you have run:
 ```
@@ -62,7 +61,7 @@ $ git restore --staged <file>
 
 ## Committing your changes
 
-Take *staged* files to be *tracked* in ```.git```.
+Take *staged* files (see the preceedeing section) to be *tracked* in ```.git```.
 ```
 $ git commit -m 'commit message'
 ```
@@ -83,28 +82,3 @@ $ git rm FILE
 ```
 $ git rm --cached FILE
 ```
-
-
-### Undo a ```git push```
-
-Assume you have just run
-```
-$ git push
-```
-but afterwards you notice there is a small problem with the commit you have pushed. You can correct this via
-```
-$ git revert SHA
-```
-The string to be put instead of ```SHA``` can be determined via
-```
-$ git log --oneline
-```
-You have to look at the recent commit and take just the initial string of seven alphanumeric characters. Example: if we have
-```
-$ git log
-8cfd3ec (HEAD -> main, origin/main) added section "Undo a gith push"
-e56a8c7 deleted LICENSE.txt
-4fb4172 Corrected title of README.md
-[...]
-```
-then, copy ```8cfd3ec```.
