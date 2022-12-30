@@ -39,7 +39,7 @@ $ git add FILE1 FILE2 ...
 ```
 
 
-### Have you staged something you shouldn't have?
+## Have you staged something you shouldn't have?
 
 For example, say you have run:
 ```
@@ -85,7 +85,7 @@ $ git rm --cached FILE
 ```
 
 
-### Undo a ```git push```
+## Undo a ```git push```
 
 Assume you have just run
 ```
